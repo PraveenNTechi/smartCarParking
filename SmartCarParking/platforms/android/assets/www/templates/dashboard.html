@@ -1,0 +1,44 @@
+<ion-view view-title="DashBoard">
+  <ion-content>
+    <ion-list>
+        <div style="padding:10px 0px 10px 0px;margin:15px;">
+            <!--<ion-item ng-repeat="dashdetail in dashboarddetails" href="#/app/dashlists/{{dashdetail.id_dash}}">-->
+            <a ng-repeat="dashdetail in dashboarddetails" href="#/app/dashlists/{{dashdetail.id_dash}}">
+                <button class="button button-light tileGradient" ng-if="dashdetail.id_dash=='d01'">
+                    <ion-nav-view name="Park-status"></ion-nav-view>
+                    <div id="locationicon" class="ion-android-pin"></div>
+                    <div class="tileBottomText">{{dashdetail.fieldname}} </div>
+                </button>
+
+                <button class="button button-light tileGradient" ng-if="dashdetail.id_dash=='d02'">
+                    <div id="historyicon" class="ion-android-list"></div>
+                    <div class="tileBottomText">{{dashdetail.fieldname}}</div>
+                </button>
+
+                <button class="button button-light tileGradient" ng-if="dashdetail.id_dash=='d03'">
+                    <div id="locationicon" class="ion-person"></div>
+                    <div class="tileBottomText">{{dashdetail.fieldname}}</div>
+                </button>
+
+                <button class="button button-light tileGradient" ng-if="dashdetail.id_dash=='d04'">
+                    <div id="offersicon" class="ion-ios-star"></div>
+                    <div class="tileBottomText">{{dashdetail.fieldname}}</div>
+                </button>
+
+                <button class="button button-light tileGradient" ng-if="dashdetail.id_dash=='d05'">
+                    <div id="abouticon" class="ion-ios-book"></div>
+                    <center>
+                        <div class="tileBottomText">{{dashdetail.fieldname}}</div>
+                    </center>
+                </button>
+
+                <button class="button button-light tileGradient" ng-if="dashdetail.id_dash=='d06'">
+                    <div id="contacticon" class="ion-ios-telephone"></div>
+                    <div class="tileBottomText">{{dashdetail.fieldname}}</div>
+                </button>
+                <!--</ion-item>-->
+            </a>
+        </div>
+    </ion-list>
+  </ion-content>
+</ion-view>

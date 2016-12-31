@@ -1,0 +1,141 @@
+<!--FOR CAR PARKING STATUS START-->
+<ion-view ng-show="dashitemid =='d01'" ng-init="dashitemid =='d01'">
+    <ion-nav-title>{{dashitemValue}}</ion-nav-title>
+    <ion-content class="padding" ng-show="{{CarParkingStatusDetails.CarParkingStatus}}">
+        <div style="background-color:black;width:100%;height:140px;vertical-align:middle;text-align:center;" ng-show="divCurrentParking">
+            <div style="padding-top:30px;">
+                <label ng-model="HH" style="color:white;font-size:xx-large;">{{HH}}</label>
+                <label style="color:blue;font-size:xx-large;"> : </label>
+                <label ng-model="MM" style="color:white;font-size:xx-large;">{{MM}}</label>
+                <label style="color:blue;font-size:xx-large;"> : </label>
+                <label ng-model="SS" style="color:white;font-size:xx-large;">{{SS}}</label>
+            </div>
+            <div>
+                <label style="color:white;width:80px;">hours</label>
+                <label style="color:white;width:80px;">minutes</label>
+                <label style="color:white;width:80px;">seconds</label>
+            </div>
+        </div>
+        <div>
+            <div style="float:left;width:50%;text-align:right;display:table-cell;vertical-align:middle;padding:25px 15px 0px 0px;font-size:larger;">
+                <span style="width:100%;display: inline-block;margin:8px;">Parking Time :</span>
+                <span style="width:100%;display: inline-block;margin:8px;">Duration :</span>
+                <span style="width:100%;display: inline-block;margin:8px;">Location :</span>
+                <span style="width:100%;display: inline-block;margin:8px;">Floor :</span>
+                <span style="width:100%;display: inline-block;margin:8px;">Slot Number :</span>
+                <span style="width:100%;display: inline-block;margin:8px;">Parking Fee :</span>
+            </div>
+            <div style="float:left;width:50%;text-align:left;display:table-cell;vertical-align:middle;padding:25px 15px 0px 0px;font-size:larger;">
+                <span style="width:100%;display: inline-block;margin:8px;">24 May 11:00 AM</span>
+                <span style="width:100%;display: inline-block;margin:8px;">30 minutes</span>
+                <span style="width:100%;display: inline-block;margin:8px;">Intel PG8</span>
+                <span style="width:100%;display: inline-block;margin:8px;">2nd Floor</span>
+                <span style="width:100%;display: inline-block;margin:8px;">B200</span>
+                <span style="width:100%;display: inline-block;margin:8px;">0 $</span>
+            </div>
+        </div>
+
+    </ion-content>
+    <ion-content ion-content class="padding" ng-hide="{{CarParkingStatusDetails.CarParkingStatus}}">
+        <div class="card">
+            <!--<div class="item item-text-wrap">
+                No status to view, car is not parked.
+            </div>-->
+            <a class="item item-avatar">
+                <img src="img/model-s.png" style="width: 64px; height: 64px ;border-color:aliceblue;" />
+                <h2>Not parked</h2>
+                <p> No status to view, car is not parked.</p>
+            </a>
+        </div>
+    </ion-content>
+</ion-view>
+<!--FOR CAR PARKING STATUS START END-->
+<!--FOR HISTORY START-->
+<ion-view ng-show="dashitemid =='d02'" ng-init="dashitemid =='d02'">
+    <ion-nav-title>{{dashitemValue}}</ion-nav-title>
+    <ion-content class="padding">
+        <div>
+            Car parking details
+        </div>
+
+    </ion-content>
+</ion-view>
+<!--FOR HISTORY END-->
+<!--FOR PROFILE START-->
+<ion-view ng-show="dashitemid =='d03'" ng-init="dashitemid =='d03'">
+    <ion-nav-title>{{dashitemValue}}</ion-nav-title>
+    <ion-content class="padding">
+
+        <div class="list">
+
+            <a class="item item-icon-left" href="#">
+                <span class="input-label has-input">
+                    NAME
+                </span>
+                <i class="icon ion-person">
+                </i>
+                UST Global
+            </a>
+
+            <a class="item item-icon-left" href="#">
+                <span class="input-label has-input">
+                    EMAIL
+                </span>
+                <i class="icon ion-ios-email">
+                </i>
+                iot@ust-global.com
+            </a>
+
+
+            <a class="item item-icon-left" href="#">
+                <span class="input-label has-input">
+                    MOBILE
+                </span>
+                <i class="icon ion-android-call">
+                </i>
+                0123456789
+            </a>
+
+            <a class="item item-icon-left" href="#">
+                <span class="input-label has-input">
+                    CUSTOMER TYPE
+                </span>
+                <i class="icon ion-ios-pricetag">
+                </i>
+                Gold
+            </a>
+
+        </div>
+    </ion-content>
+</ion-view>
+<!--FOR PROFILE END-->
+<!--FOR OFFERS START-->
+<ion-view ng-show="dashitemid =='d04'" ng-init="dashitemid =='d04'">
+    <ion-nav-title>{{dashitemValue}}</ion-nav-title>
+    <ion-content class="padding">
+        {{dashitemValue}}
+    </ion-content>
+</ion-view>
+<!--FOR OFFERS END-->
+<!--FOR ABOUT US START-->
+<ion-view ng-show="dashitemid =='d05'" ng-init="dashitemid =='d05'">
+    <ion-nav-title>{{dashitemValue}}</ion-nav-title>
+    <ion-content class="padding">
+        <p> UST Global® is a leading provider of end-to-end IT services </p>
+        <p>    and solutions for Global 1000 companies. We use a client-centric </p>
+        <p> Global Engagement Model that combines local, senior, on-site </p>
+        <p>
+            resources with the cost, scale, and quality advantages of
+            off-shore operation
+        </p>
+    </ion-content>
+</ion-view>
+<!--FOR ABOUT US END-->
+<!--FOR CONTACT US START-->
+<ion-view ng-show="dashitemid =='d06'" ng-init="dashitemid =='d06'">
+    <ion-nav-title>{{dashitemValue}}</ion-nav-title>
+    <ion-content class="padding">
+        {{dashitemValue}}
+    </ion-content>
+</ion-view>
+<!--FOR CONTACT US END--> 
